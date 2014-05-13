@@ -1,0 +1,136 @@
+2013-09-12		Created by Kinga
+项目实训：DMS数据挖掘实训
+Data Mine System
+/var/adm/wtmpx  登录日志，记录帐户登入登出时间
+一、需求文档的撰写
+按照软件工程的要求，复述用户的需求，得到用户的认可。
+用户化的需求文档，侧重于业务语言。
+专业化的需求文档，侧重于技术语言。
+用例、事件流、异常流、前置条件、后置条件(结果)。
+面向客户，面向分析设计师。
+简单的演示程序(demo)。
+在招标过程中的作用至关重要。
+例：数据采集客户机
+1. 用例名称
+数据采集客户机
+2. 参与者
+系统管理员、定时任务管理器
+3. 事件流
+1)备份系统日志，产生一个备份文件，备份文件的根据系统时间命名，如：wtmpx.20130912121029。该文件记录用户的登入登出记录。
+2)读取上次匹配的剩余登入记录。
+采集时，可能用户只有登入没有登出的记录，下次采集时要将只有登出没有登入的记录和上次只有登入没有登出的记录匹配。
+3)读取备份文件，产生用户登入登出记录：
+登录名、登录IP、登录进程ID、登入时间、登出时间、登录时长。
+4)把登入登出记录进行匹配，得到登录记录。
+5)对于只有登入没有登出的记录，保存在登入文件中，供下次采集时匹配。
+6)根据采集服务器的IP和端口号，建立网络连接。
+7)发送登录记录
+4. 可选事件流
+无
+5. 异常事件流
+1)备份登录日志失败，停止采集。
+2)读取备份文件失败，停止采集。
+3)匹配登入登出失败，将登入记录保存在登入文件中，下次匹配。
+4)连接服务器失败，保存匹配记录，下次重新启用。
+5)发送登录记录失败，保存剩余记录，下次再发。
+6. 前置条件
+1)日志文件的目录和文件名：/var/adm/wtmpx
+2)登入记录文件名
+3)匹配记录文件名
+4)服务器IP和端口号
+7. 后置条件
+1)登录匹配记录
+8. 特殊规则
+无
+9. UML九种图
+五静：用例图、类图、组件图、对象图、部署图
+四动：时序图、状态图、活动图、协作图
+
+二、概要设计
+LogRec - 日志结构
+	logname - 登录名
+	logip - 登录IP
+	pid - 登录进程ID
+	logtime - 登入/登出时间
+分别放在两个容器中：登入记录列表、登出记录列表
+list<LogRec>
+MLogRec - 匹配日志结构
+	logintime - 登入时间
+	logouttime - 登出时间
+	durations - 登录时长
+
+ClientException - 客户机异常 继承 exception
+	子类：
+	BackupException - 备份异常
+	ReadException - 读取异常
+	SaveException - 存储异常
+	SocketException - 网络异常
+	SendException - 发送异常
+Client - 数据采集客户机
+	m_reader - 日志读取器
+	m_sender - 日志发送器
+	dataMine() - 数据采集
+LogReader - 日志读取器
+	属性：
+	m_logFile - 日志文件
+	m_loginsFile - 登入文件
+	m_backupFile - 备份文件
+	m_logins - 登入日志记录集
+	m_logouts - 登出日志记录集
+	m_logs - 匹配日志记录集
+	行为：
+	readLog() - 读取日志
+	backup() - 备份日志
+	readLoginsFile() - 读取登入文件
+	readBackupFile() - 读取备份文件
+	match() - 匹配登入登出
+	saveLoginsFile() - 保存登入文件
+	getLogs() - 获取匹配日志记录集
+LogSender - 日志发送器
+	属性：
+	m_ip - 服务器IP地址
+	m_port - 服务器端口号
+	m_failFile - 发送失败文件
+	m_sockfd - 套接字描述符
+	行为：
+	sendLog() - 发送日志，暴露的接口，调用下面四个函数
+	connectServer() - 连接服务器
+	readFailFile() -  读取发送失败文件
+	sendData() - 发送数据，发送一条删除一条
+	saveFailFile() - 保存发送失败文件
+	
+三、详细设计
+
+3. 事件流
+(1)接收客户数据
+A. 建立服务器socket
+B. 接收客户端请求
+C. 为该采集点创建线程接收采集数据
+D. 把数据放入缓冲数据结构
+
+(2)保存客户数据
+A. 连接数据库
+B. 从缓冲结构中获取数据
+C. 保存数据
+D. 关闭数据库连接
+
+day61
+$ crontab -e
+A B C D E 命令路径
+分时日月星期
+* * * * * /home/tarena/dms/client/client.sh
+在任意月任意日任意时任意分任意星期，执行client.sh，即每分钟执行一次。
+星期用0-6表示，0表示星期天
+15 * * * 1-5 /home/tarena/dms/client/client.sh 表示周一到周五，任意月日时的第15分钟，执行client.sh
+0,30 1,3,5 * * 1-5 从周一到周五，任意月日的1点3点5点的第0分和第30分执行。
+
+create sequence dmslog_id;
+create table dmslog(
+	id			number primary key,
+	logname		varchar2(32),
+	logip		varchar2(32),
+	pid			number,
+	logintime	date,
+	logouttime	date,
+	durations	number
+);

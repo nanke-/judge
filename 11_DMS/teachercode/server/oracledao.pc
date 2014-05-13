@@ -1,0 +1,103 @@
+/* 实现Oracle数据访问对象类 */
+#include <iostream>
+#include <sstream>
+#include <cstdio>
+using namespace std;
+#include "oracledao.h"
+
+exec sql include sqlca;
+
+exec sql begin declare section;
+	sql_context g_context;
+	char g_userpwd[30];
+
+	struct DLogRec
+	{
+		char	logname[32];
+		char	logip[32];
+		int		pid;
+		char	logintime[52];
+		char	logouttime[52];
+		int		durations;
+	} g_log = {"", "", 0, "", "", 0};
+exec sql end   declare section;
+
+
+
+/* 构造器 */
+OracleDao::OracleDao (const string& username,
+	const string& password)
+	throw (DBException) {
+	cout << "打开数据库开始..." << endl;
+	
+	sprintf(g_userpwd, "%s/%s",
+			username.c_str(),
+			password.c_str());
+	exec sql enable threads;
+	exec sql context allocate:g_context;
+	exec sql context use :g_context;
+	exec sql connect :g_userpwd;
+	if(sqlca.sqlcode)
+	{
+		ostringstream oss;
+		oss << "ORA" << showpos
+			<< sqlca.sqlcode;
+		throw DBException(oss.str());
+	}
+
+	cout << "打开数据库完成。" << endl;
+}
+
+OracleDao::~OracleDao (void) {
+	cout << "关闭数据库开始..." << endl;
+	exec sql commit work release;
+	cout << "关闭数据库完成。" << endl;
+}
+
+/* 插入 */
+void OracleDao::insert (const MLogRec& log)
+	throw (DBException) {
+	cout << "插入数据库开始..." << endl;
+	/*
+	 * cout << log << endl;
+	 */
+	strcpy(g_log.logname, log.logname);
+	strcpy(g_log.logip, log.logip);
+	g_log.pid = log.pid;
+	time_t t = log.logintime;
+	tm* local = localtime(&t);
+	sprintf(g_log.logintime,
+			"%04d-%02d-%2d %02d:%02d:%02d",
+			local->tm_year + 1900,
+			local->tm_mon + 1,
+			local->tm_mday,
+			local->tm_hour,
+			local->tm_min,
+			local->tm_sec);
+	sprintf(g_log.logouttime,
+			"%04d-%02d-%2d %02d:%02d:%02d",
+			local->tm_year + 1900,
+			local->tm_mon + 1,
+			local->tm_mday,
+			local->tm_hour,
+			local->tm_min,
+	g_log.durations = log.durations;
+	exec sql insert into dmslog values(
+			dmslog_id.nextval,
+			:g_log.logname,
+			:g_log.logip,
+			:g_log.pid,
+			to_date(:g_log.logintime,
+				'yyyy-mm-dd hh24:mi:ss'),
+			to_date(:g_log.logouttime,
+				'yyyy-mm-dd hh24:mi:ss'),
+			:g_log.durations);
+	if(sqlca.sqlcode)
+	{
+		ostringstream oss;
+		oss << "ORA" << showpos << sqlca.sqlcode;
+		throw DBException(oss.str());
+	}
+	exec sql commit;
+	cout << "插入数据库完成。" << endl;
+}

@@ -1,0 +1,782 @@
+--NOTICE-- [2014-04-26 20:28:10] [logger.cpp:29] log_open
+--NOTICE-- [2014-04-26 20:28:10] [logger.cpp:37] log_close
+--NOTICE-- [2014-04-26 20:35:02] [logger.cpp:29] log_open
+--NOTICE-- [2014-04-26 20:35:02] [logger.cpp:37] log_close
+--NOTICE-- [2014-04-26 20:38:35] [logger.cpp:29] log_open
+--NOTICE-- [2014-04-26 20:38:35] [logger.cpp:37] log_close
+--NOTICE-- [2014-04-26 20:39:06] [logger.cpp:29] log_open
+--NOTICE-- [2014-04-26 20:39:06] [logger.cpp:37] log_close
+--NOTICE-- [2014-04-26 20:46:02] [logger.cpp:29] log_open
+--NOTICE-- [2014-04-26 20:46:02] [logger.cpp:37] log_close
+--NOTICE-- [2014-04-26 20:47:24] [logger.cpp:29] log_open
+--NOTICE-- [2014-04-26 20:47:24] [logger.cpp:37] log_close
+--NOTICE-- [2014-04-26 20:51:51] [logger.cpp:29] log_open 1
+
+--NOTICE-- [2014-04-26 20:51:51] [logger.cpp:37] log_close
+--NOTICE-- [2014-04-26 20:57:05] [logger.cpp:29] log_open 1
+
+--NOTICE-- [2014-04-26 20:57:05] [logger.cpp:37] log_close 1
+
+--NOTICE-- [2014-04-26 20:58:53] [logger.cpp:29] log_open 1
+--NOTICE-- [2014-04-26 20:58:53] [logger.cpp:37] log_close 1
+--NOTICE-- [2014-04-26 21:09:22] [logger.cpp:35] log_open 1
+--DEBUG-- [2014-04-26 21:09:22] [main.cpp:27] opened
+--DEBUG-- [2014-04-26 21:09:22] [compiler.cpp:320] m_config_path = /home/conlan/judge/compiler.xml
+
+--TRACE-- [2014-04-26 21:09:22] [compiler.cpp:349] Compile Command: g++ /home/conlan/judge/1001.cpp -lm -W -Wunused -Wfloat-equal -Wformat -Wparentheses -Wswitch -Wsequence-point -O2 -static -o 1001 2>compile_message.txt
+
+--TRACE-- [2014-04-26 21:09:22] [compiler.cpp:183] compile setTimer!
+
+--WARNING-- [2014-04-26 21:09:22] [compiler.cpp:201] [start compile] set CPU limit fail
+
+--NOTICE-- [2014-04-26 21:09:22] [logger.cpp:43] [start compile] log_close 1
+--TRACE-- [2014-04-26 21:09:22] [compiler.cpp:230] Compile Succeed
+--DEBUG-- [2014-04-26 21:09:22] [compiler.cpp:127] result: option = 0 signal = 0
+
+--DEBUG-- [2014-04-26 21:09:22] [executor.cpp:438] cwd: /home/conlan/judge
+
+--DEBUG-- [2014-04-26 13:09:22] [executor.cpp:446] after chroot , cwd: /home/conlan/judge
+
+--TRACE-- [2014-04-26 13:09:22] [executor.cpp:453] set_security_option ok
+
+--DEBUG-- [2014-04-26 13:09:22] [executor.cpp:169] m_stack_limit = 8192
+
+--NOTICE-- [2014-04-26 13:09:22] [logger.cpp:43] log_close 1
+--TRACE-- [2014-04-26 21:09:22] [executor.cpp:210] Exe succeed
+
+--DEBUG-- [2014-04-26 21:09:22] [executor.cpp:244] signal: 0 time: 0 memory: 0
+
+--TRACE-- [2014-04-26 21:09:22] [checker.cpp:152] Check result : WA
+
+--NOTICE-- [2014-04-26 21:09:22] [logger.cpp:43] log_close 1
+--NOTICE-- [2014-04-26 21:16:59] [logger.cpp:35] log_open 1
+--DEBUG-- [2014-04-26 21:16:59] [main.cpp:27] opened
+--DEBUG-- [2014-04-26 21:16:59] [compiler.cpp:320] m_config_path = /home/conlan/judge/compiler.xml
+
+--TRACE-- [2014-04-26 21:16:59] [compiler.cpp:349] Compile Command: g++ /home/conlan/judge/1001.cpp -lm -W -Wunused -Wfloat-equal -Wformat -Wparentheses -Wswitch -Wsequence-point -O2 -static -o 1001 2>compile_message.txt
+
+--TRACE-- [2014-04-26 21:16:59] [compiler.cpp:183] compile setTimer!
+
+--WARNING-- [2014-04-26 21:16:59] [compiler.cpp:201] [start compile] set CPU limit fail
+
+--NOTICE-- [2014-04-26 21:16:59] [logger.cpp:43] [start compile] log_close 1
+--TRACE-- [2014-04-26 21:16:59] [compiler.cpp:230] Compile Succeed
+--DEBUG-- [2014-04-26 21:16:59] [compiler.cpp:127] result: option = 0 signal = 0
+
+--DEBUG-- [2014-04-26 21:16:59] [executor.cpp:438] cwd: /home/conlan/judge
+
+--DEBUG-- [2014-04-26 13:16:59] [executor.cpp:446] after chroot , cwd: /
+
+--TRACE-- [2014-04-26 13:16:59] [executor.cpp:453] set_security_option ok
+
+--DEBUG-- [2014-04-26 13:16:59] [executor.cpp:169] m_stack_limit = 8192
+
+--NOTICE-- [2014-04-26 13:16:59] [logger.cpp:43] log_close 1
+--TRACE-- [2014-04-26 21:16:59] [executor.cpp:210] Exe succeed
+
+--DEBUG-- [2014-04-26 21:16:59] [executor.cpp:244] signal: 0 time: 0 memory: 0
+
+--TRACE-- [2014-04-26 21:16:59] [checker.cpp:76] Check result : WA
+
+--NOTICE-- [2014-04-26 21:16:59] [logger.cpp:43] log_close 1
+--NOTICE-- [2014-04-26 21:17:56] [logger.cpp:35] log_open 1
+--DEBUG-- [2014-04-26 21:17:56] [main.cpp:27] opened
+--DEBUG-- [2014-04-26 21:17:56] [compiler.cpp:320] m_config_path = /home/conlan/judge/compiler.xml
+
+--TRACE-- [2014-04-26 21:17:56] [compiler.cpp:349] Compile Command: g++ /home/conlan/judge/1001.cpp -lm -W -Wunused -Wfloat-equal -Wformat -Wparentheses -Wswitch -Wsequence-point -O2 -static -o 1001 2>compile_message.txt
+
+--TRACE-- [2014-04-26 21:17:56] [compiler.cpp:183] compile setTimer!
+
+--WARNING-- [2014-04-26 21:17:56] [compiler.cpp:201] [start compile] set CPU limit fail , 6
+
+--NOTICE-- [2014-04-26 21:17:56] [logger.cpp:43] [start compile] log_close 1
+--TRACE-- [2014-04-26 21:17:56] [compiler.cpp:230] Compile Succeed
+--DEBUG-- [2014-04-26 21:17:56] [compiler.cpp:127] result: option = 0 signal = 0
+
+--DEBUG-- [2014-04-26 21:17:56] [executor.cpp:438] cwd: /home/conlan/judge
+
+--DEBUG-- [2014-04-26 13:17:56] [executor.cpp:446] after chroot , cwd: /
+
+--TRACE-- [2014-04-26 13:17:56] [executor.cpp:453] set_security_option ok
+
+--DEBUG-- [2014-04-26 13:17:56] [executor.cpp:169] m_stack_limit = 8192
+
+--NOTICE-- [2014-04-26 13:17:56] [logger.cpp:43] log_close 1
+--TRACE-- [2014-04-26 21:17:56] [executor.cpp:210] Exe succeed
+
+--DEBUG-- [2014-04-26 21:17:56] [executor.cpp:244] signal: 0 time: 0 memory: 0
+
+--TRACE-- [2014-04-26 21:17:56] [checker.cpp:76] Check result : WA
+
+--NOTICE-- [2014-04-26 21:17:56] [logger.cpp:43] log_close 1
+--NOTICE-- [2014-04-26 21:23:27] [logger.cpp:35] log_open 1
+--DEBUG-- [2014-04-26 21:23:27] [main.cpp:27] opened
+--DEBUG-- [2014-04-26 21:23:27] [compiler.cpp:321] m_config_path = /home/conlan/judge/compiler.xml
+
+--TRACE-- [2014-04-26 21:23:27] [compiler.cpp:350] Compile Command: g++ /home/conlan/judge/1001.cpp -lm -W -Wunused -Wfloat-equal -Wformat -Wparentheses -Wswitch -Wsequence-point -O2 -static -o 1001 2>compile_message.txt
+
+--TRACE-- [2014-04-26 21:23:27] [compiler.cpp:184] compile setTimer!
+
+--WARNING-- [2014-04-26 21:23:27] [compiler.cpp:202] [start compile] set CPU limit fail , 22 Invalid argument
+
+--NOTICE-- [2014-04-26 21:23:27] [logger.cpp:43] [start compile] log_close 1
+--TRACE-- [2014-04-26 21:23:27] [compiler.cpp:231] Compile Succeed
+--DEBUG-- [2014-04-26 21:23:27] [compiler.cpp:128] result: option = 0 signal = 0
+
+--DEBUG-- [2014-04-26 21:23:27] [executor.cpp:438] cwd: /home/conlan/judge
+
+--DEBUG-- [2014-04-26 13:23:27] [executor.cpp:446] after chroot , cwd: /
+
+--TRACE-- [2014-04-26 13:23:27] [executor.cpp:453] set_security_option ok
+
+--DEBUG-- [2014-04-26 13:23:27] [executor.cpp:169] m_stack_limit = 8192
+
+--NOTICE-- [2014-04-26 13:23:27] [logger.cpp:43] log_close 1
+--TRACE-- [2014-04-26 21:23:27] [executor.cpp:210] Exe succeed
+
+--DEBUG-- [2014-04-26 21:23:27] [executor.cpp:244] signal: 0 time: 0 memory: 0
+
+--TRACE-- [2014-04-26 21:23:27] [checker.cpp:76] Check result : WA
+
+--NOTICE-- [2014-04-26 21:23:27] [logger.cpp:43] log_close 1
+--NOTICE-- [2014-04-26 21:25:19] [logger.cpp:35] log_open 1
+--DEBUG-- [2014-04-26 21:25:19] [main.cpp:27] opened
+--DEBUG-- [2014-04-26 21:25:19] [compiler.cpp:321] m_config_path = /home/conlan/judge/compiler.xml
+
+--TRACE-- [2014-04-26 21:25:19] [compiler.cpp:350] Compile Command: g++ /home/conlan/judge/1001.cpp -lm -W -Wunused -Wfloat-equal -Wformat -Wparentheses -Wswitch -Wsequence-point -O2 -static -o 1001 2>compile_message.txt
+
+--TRACE-- [2014-04-26 21:25:19] [compiler.cpp:184] compile setTimer!
+
+--TRACE-- [2014-04-26 21:25:20] [compiler.cpp:231] Compile Succeed
+--DEBUG-- [2014-04-26 21:25:20] [compiler.cpp:128] result: option = 0 signal = 0
+
+--DEBUG-- [2014-04-26 21:25:20] [executor.cpp:438] cwd: /home/conlan/judge
+
+--DEBUG-- [2014-04-26 13:25:20] [executor.cpp:446] after chroot , cwd: /
+
+--TRACE-- [2014-04-26 13:25:20] [executor.cpp:453] set_security_option ok
+
+--DEBUG-- [2014-04-26 13:25:20] [executor.cpp:169] m_stack_limit = 8192
+
+--TRACE-- [2014-04-26 21:25:20] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-26 21:25:20] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-26 21:25:20] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-26 21:25:20] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-26 21:25:20] [executor.cpp:359] current memory used = 568
+
+--TRACE-- [2014-04-26 21:25:20] [executor.cpp:359] current memory used = 568
+
+--TRACE-- [2014-04-26 21:25:20] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-26 21:25:20] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-26 21:25:20] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-26 21:25:20] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-26 21:25:20] [executor.cpp:359] current memory used = 704
+
+--TRACE-- [2014-04-26 21:25:20] [executor.cpp:359] current memory used = 704
+
+--TRACE-- [2014-04-26 21:25:20] [executor.cpp:359] current memory used = 708
+
+--TRACE-- [2014-04-26 21:25:20] [executor.cpp:210] Exe succeed
+
+--DEBUG-- [2014-04-26 21:25:20] [executor.cpp:244] signal: 0 time: 0 memory: 708
+
+--TRACE-- [2014-04-26 21:25:20] [checker.cpp:105] Check result : AC
+
+--NOTICE-- [2014-04-26 21:25:20] [logger.cpp:43] log_close 1
+--NOTICE-- [2014-04-26 21:26:23] [logger.cpp:35] log_open 1
+--DEBUG-- [2014-04-26 21:26:23] [main.cpp:27] opened
+--DEBUG-- [2014-04-26 21:26:23] [compiler.cpp:321] m_config_path = /home/conlan/judge/compiler.xml
+
+--TRACE-- [2014-04-26 21:26:23] [compiler.cpp:350] Compile Command: g++ /home/conlan/judge/1001.cpp -lm -W -Wunused -Wfloat-equal -Wformat -Wparentheses -Wswitch -Wsequence-point -O2 -static -o 1001 2>compile_message.txt
+
+--TRACE-- [2014-04-26 21:26:23] [compiler.cpp:184] compile setTimer!
+
+--TRACE-- [2014-04-26 21:26:23] [compiler.cpp:231] Compile Succeed
+--DEBUG-- [2014-04-26 21:26:23] [compiler.cpp:128] result: option = 0 signal = 0
+
+--DEBUG-- [2014-04-26 21:26:23] [executor.cpp:438] cwd: /home/conlan/judge
+
+--DEBUG-- [2014-04-26 13:26:23] [executor.cpp:446] after chroot , cwd: /
+
+--TRACE-- [2014-04-26 13:26:23] [executor.cpp:453] set_security_option ok
+
+--DEBUG-- [2014-04-26 13:26:23] [executor.cpp:169] m_stack_limit = 8192
+
+--TRACE-- [2014-04-26 21:26:23] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-26 21:26:23] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-26 21:26:23] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-26 21:26:23] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-26 21:26:23] [executor.cpp:359] current memory used = 568
+
+--TRACE-- [2014-04-26 21:26:23] [executor.cpp:359] current memory used = 568
+
+--TRACE-- [2014-04-26 21:26:23] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-26 21:26:23] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-26 21:26:23] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-26 21:26:23] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-26 21:26:23] [executor.cpp:359] current memory used = 704
+
+--TRACE-- [2014-04-26 21:26:23] [executor.cpp:359] current memory used = 704
+
+--TRACE-- [2014-04-26 21:26:23] [executor.cpp:359] current memory used = 708
+
+--TRACE-- [2014-04-26 21:26:23] [executor.cpp:210] Exe succeed
+
+--DEBUG-- [2014-04-26 21:26:23] [executor.cpp:244] signal: 0 time: 0 memory: 708
+
+--TRACE-- [2014-04-26 21:26:23] [checker.cpp:105] Check result : AC
+
+--NOTICE-- [2014-04-26 21:26:23] [logger.cpp:43] log_close 1
+--NOTICE-- [2014-04-27 08:35:42] [logger.cpp:35] log_open 1
+--DEBUG-- [2014-04-27 08:35:42] [main.cpp:27] opened
+--DEBUG-- [2014-04-27 08:35:42] [compiler.cpp:321] m_config_path = /home/conlan/judge/compiler.xml
+
+--TRACE-- [2014-04-27 08:35:42] [compiler.cpp:350] Compile Command: g++ /home/conlan/judge/1001.cpp -lm -W -Wunused -Wfloat-equal -Wformat -Wparentheses -Wswitch -Wsequence-point -O2 -static -o 1001 2>compile_message.txt
+
+--TRACE-- [2014-04-27 08:35:42] [compiler.cpp:184] compile setTimer!
+
+--TRACE-- [2014-04-27 08:35:42] [compiler.cpp:236] Compile Error
+--DEBUG-- [2014-04-27 08:35:42] [compiler.cpp:128] result: option = 0 signal = 1
+
+--NOTICE-- [2014-04-27 08:35:42] [logger.cpp:43] log_close 1
+--NOTICE-- [2014-04-27 08:37:04] [logger.cpp:35] log_open 1
+--DEBUG-- [2014-04-27 08:37:04] [main.cpp:27] opened
+--DEBUG-- [2014-04-27 08:37:04] [compiler.cpp:321] m_config_path = /home/conlan/judge/compiler.xml
+
+--TRACE-- [2014-04-27 08:37:04] [compiler.cpp:350] Compile Command: g++ /home/conlan/judge/1001.cpp -lm -W -Wunused -Wfloat-equal -Wformat -Wparentheses -Wswitch -Wsequence-point -O2 -static -o 1001 2>compile_message.txt
+
+--TRACE-- [2014-04-27 08:37:04] [compiler.cpp:184] compile setTimer!
+
+--TRACE-- [2014-04-27 08:37:05] [compiler.cpp:231] Compile Succeed
+--DEBUG-- [2014-04-27 08:37:05] [compiler.cpp:128] result: option = 0 signal = 0
+
+--DEBUG-- [2014-04-27 08:37:05] [executor.cpp:438] cwd: /home/conlan/judge
+
+--DEBUG-- [2014-04-27 00:37:05] [executor.cpp:446] after chroot , cwd: /
+
+--TRACE-- [2014-04-27 00:37:05] [executor.cpp:453] set_security_option ok
+
+--DEBUG-- [2014-04-27 00:37:05] [executor.cpp:169] m_stack_limit = 8192
+
+--TRACE-- [2014-04-27 08:37:05] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-27 08:37:05] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-27 08:37:05] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-27 08:37:05] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-27 08:37:05] [executor.cpp:359] current memory used = 568
+
+--TRACE-- [2014-04-27 08:37:05] [executor.cpp:359] current memory used = 568
+
+--TRACE-- [2014-04-27 08:37:05] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-27 08:37:05] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-27 08:37:05] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-27 08:37:05] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-27 08:37:05] [executor.cpp:359] current memory used = 704
+
+--TRACE-- [2014-04-27 08:37:05] [executor.cpp:359] current memory used = 704
+
+--TRACE-- [2014-04-27 08:37:05] [executor.cpp:359] current memory used = 708
+
+--TRACE-- [2014-04-27 08:37:07] [executor.cpp:218] Time Limit Execute
+
+--DEBUG-- [2014-04-27 08:37:07] [executor.cpp:244] signal: 0 time: 1980 memory: 708
+
+--TRACE-- [2014-04-27 08:37:07] [checker.cpp:105] Check result : AC
+
+--NOTICE-- [2014-04-27 08:37:07] [logger.cpp:43] log_close 1
+--NOTICE-- [2014-04-27 08:37:44] [logger.cpp:35] log_open 1
+--DEBUG-- [2014-04-27 08:37:44] [main.cpp:27] opened
+--DEBUG-- [2014-04-27 08:37:44] [compiler.cpp:321] m_config_path = /home/conlan/judge/compiler.xml
+
+--TRACE-- [2014-04-27 08:37:44] [compiler.cpp:350] Compile Command: g++ /home/conlan/judge/1001.cpp -lm -W -Wunused -Wfloat-equal -Wformat -Wparentheses -Wswitch -Wsequence-point -O2 -static -o 1001 2>compile_message.txt
+
+--TRACE-- [2014-04-27 08:37:44] [compiler.cpp:184] compile setTimer!
+
+--TRACE-- [2014-04-27 08:37:44] [compiler.cpp:231] Compile Succeed
+--DEBUG-- [2014-04-27 08:37:44] [compiler.cpp:128] result: option = 0 signal = 0
+
+--DEBUG-- [2014-04-27 08:37:44] [executor.cpp:438] cwd: /home/conlan/judge
+
+--DEBUG-- [2014-04-27 00:37:44] [executor.cpp:446] after chroot , cwd: /
+
+--TRACE-- [2014-04-27 00:37:44] [executor.cpp:453] set_security_option ok
+
+--DEBUG-- [2014-04-27 00:37:44] [executor.cpp:169] m_stack_limit = 8192
+
+--TRACE-- [2014-04-27 08:37:44] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-27 08:37:44] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-27 08:37:44] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-27 08:37:44] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-27 08:37:44] [executor.cpp:359] current memory used = 568
+
+--TRACE-- [2014-04-27 08:37:44] [executor.cpp:359] current memory used = 568
+
+--TRACE-- [2014-04-27 08:37:44] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-27 08:37:44] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-27 08:37:44] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-27 08:37:44] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-27 08:37:44] [executor.cpp:359] current memory used = 704
+
+--TRACE-- [2014-04-27 08:37:44] [executor.cpp:359] current memory used = 704
+
+--TRACE-- [2014-04-27 08:37:44] [executor.cpp:359] current memory used = 708
+
+--TRACE-- [2014-04-27 08:37:54] [executor.cpp:218] Time Limit Execute
+
+--DEBUG-- [2014-04-27 08:37:54] [executor.cpp:244] signal: 0 time: 10008 memory: 708
+
+--TRACE-- [2014-04-27 08:37:54] [checker.cpp:105] Check result : AC
+
+--NOTICE-- [2014-04-27 08:37:54] [logger.cpp:43] log_close 1
+--NOTICE-- [2014-04-27 08:38:26] [logger.cpp:35] log_open 1
+--DEBUG-- [2014-04-27 08:38:26] [main.cpp:27] opened
+--DEBUG-- [2014-04-27 08:38:26] [compiler.cpp:321] m_config_path = /home/conlan/judge/compiler.xml
+
+--TRACE-- [2014-04-27 08:38:26] [compiler.cpp:350] Compile Command: g++ /home/conlan/judge/1001.cpp -lm -W -Wunused -Wfloat-equal -Wformat -Wparentheses -Wswitch -Wsequence-point -O2 -static -o 1001 2>compile_message.txt
+
+--TRACE-- [2014-04-27 08:38:26] [compiler.cpp:184] compile setTimer!
+
+--TRACE-- [2014-04-27 08:38:27] [compiler.cpp:231] Compile Succeed
+--DEBUG-- [2014-04-27 08:38:27] [compiler.cpp:128] result: option = 0 signal = 0
+
+--DEBUG-- [2014-04-27 08:38:27] [executor.cpp:438] cwd: /home/conlan/judge
+
+--DEBUG-- [2014-04-27 00:38:27] [executor.cpp:446] after chroot , cwd: /
+
+--TRACE-- [2014-04-27 00:38:27] [executor.cpp:453] set_security_option ok
+
+--DEBUG-- [2014-04-27 00:38:27] [executor.cpp:169] m_stack_limit = 8192
+
+--TRACE-- [2014-04-27 08:38:27] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-27 08:38:27] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-27 08:38:27] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-27 08:38:27] [executor.cpp:359] current memory used = 564
+
+--TRACE-- [2014-04-27 08:38:27] [executor.cpp:359] current memory used = 568
+
+--TRACE-- [2014-04-27 08:38:27] [executor.cpp:359] current memory used = 568
+
+--TRACE-- [2014-04-27 08:38:27] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-27 08:38:27] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-27 08:38:27] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-27 08:38:27] [executor.cpp:359] current memory used = 700
+
+--TRACE-- [2014-04-27 08:38:27] [executor.cpp:359] current memory used = 704
+
+--TRACE-- [2014-04-27 08:38:27] [executor.cpp:359] current memory used = 704
+
+--TRACE-- [2014-04-27 08:38:27] [executor.cpp:359] current memory used = 708
+
+--TRACE-- [2014-04-27 08:38:38] [executor.cpp:218] Time Limit Execute
+
+--DEBUG-- [2014-04-27 08:38:38] [executor.cpp:244] signal: 0 time: 10996 memory: 708
+
+--TRACE-- [2014-04-27 08:38:38] [checker.cpp:105] Check result : AC
+
+--NOTICE-- [2014-04-27 08:38:38] [logger.cpp:43] log_close 1
+--NOTICE-- [2014-04-27 08:40:19] [logger.cpp:35] log_open 1
+--DEBUG-- [2014-04-27 08:40:19] [main.cpp:27] opened
+--DEBUG-- [2014-04-27 08:40:19] [compiler.cpp:321] m_config_path = /home/conlan/judge/compiler.xml
+
+--TRACE-- [2014-04-27 08:40:19] [compiler.cpp:350] Compile Command: g++ /home/conlan/judge/1001.cpp -lm -W -Wunused -Wfloat-equal -Wformat -Wparentheses -Wswitch -Wsequence-point -O2 -static -o 1001 2>compile_message.txt
+
+--TRACE-- [2014-04-27 08:40:19] [compiler.cpp:184] compile setTimer!
+
+--TRACE-- [2014-04-27 08:40:20] [compiler.cpp:231] Compile Succeed
+--DEBUG-- [2014-04-27 08:40:20] [compiler.cpp:128] result: option = 0 signal = 0
+
+--DEBUG-- [2014-04-27 08:40:20] [executor.cpp:439] cwd: /home/conlan/judge
+
+--DEBUG-- [2014-04-27 00:40:20] [executor.cpp:447] after chroot , cwd: /
+
+--TRACE-- [2014-04-27 00:40:20] [executor.cpp:454] set_security_option ok
+
+--DEBUG-- [2014-04-27 00:40:20] [executor.cpp:169] m_stack_limit = 8192
+
+--DEBUG-- [2014-04-27 00:40:20] [executor.cpp:176] set Stack limit : m_stack_limit = 8192
+--TRACE-- [2014-04-27 08:40:20] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 08:40:20] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 08:40:20] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 08:40:20] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 08:40:20] [executor.cpp:360] current memory used = 568
+
+--TRACE-- [2014-04-27 08:40:20] [executor.cpp:360] current memory used = 568
+
+--TRACE-- [2014-04-27 08:40:20] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 08:40:20] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 08:40:20] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 08:40:20] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 08:40:20] [executor.cpp:360] current memory used = 704
+
+--TRACE-- [2014-04-27 08:40:20] [executor.cpp:360] current memory used = 704
+
+--TRACE-- [2014-04-27 08:40:20] [executor.cpp:360] current memory used = 708
+
+--TRACE-- [2014-04-27 08:40:31] [executor.cpp:235] Execute Error
+
+--DEBUG-- [2014-04-27 08:40:31] [executor.cpp:245] signal: 9 time: 11000 memory: 708
+
+--TRACE-- [2014-04-27 08:40:31] [checker.cpp:105] Check result : AC
+
+--NOTICE-- [2014-04-27 08:40:31] [logger.cpp:43] log_close 1
+--NOTICE-- [2014-04-27 08:43:12] [logger.cpp:35] log_open 1
+--DEBUG-- [2014-04-27 08:43:12] [main.cpp:27] opened
+--DEBUG-- [2014-04-27 08:43:12] [compiler.cpp:321] m_config_path = /home/conlan/judge/compiler.xml
+
+--TRACE-- [2014-04-27 08:43:12] [compiler.cpp:350] Compile Command: g++ /home/conlan/judge/1001.cpp -lm -W -Wunused -Wfloat-equal -Wformat -Wparentheses -Wswitch -Wsequence-point -O2 -static -o 1001 2>compile_message.txt
+
+--TRACE-- [2014-04-27 08:43:12] [compiler.cpp:184] compile setTimer!
+
+--TRACE-- [2014-04-27 08:43:12] [compiler.cpp:231] Compile Succeed
+--DEBUG-- [2014-04-27 08:43:12] [compiler.cpp:128] result: option = 0 signal = 0
+
+--DEBUG-- [2014-04-27 08:43:12] [executor.cpp:439] cwd: /home/conlan/judge
+
+--DEBUG-- [2014-04-27 00:43:12] [executor.cpp:447] after chroot , cwd: /
+
+--TRACE-- [2014-04-27 00:43:12] [executor.cpp:454] set_security_option ok
+
+--DEBUG-- [2014-04-27 00:43:12] [executor.cpp:169] m_stack_limit = 8192
+
+--DEBUG-- [2014-04-27 00:43:12] [executor.cpp:176] set Stack limit : m_stack_limit = 8192
+--TRACE-- [2014-04-27 08:43:12] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 08:43:12] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 08:43:12] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 08:43:12] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 08:43:12] [executor.cpp:360] current memory used = 568
+
+--TRACE-- [2014-04-27 08:43:12] [executor.cpp:360] current memory used = 568
+
+--TRACE-- [2014-04-27 08:43:12] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 08:43:12] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 08:43:12] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 08:43:12] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 08:43:12] [executor.cpp:360] current memory used = 704
+
+--TRACE-- [2014-04-27 08:43:12] [executor.cpp:369] Memory Limit Exceed
+
+--TRACE-- [2014-04-27 08:43:12] [executor.cpp:223] Memory Limit Execute
+
+--DEBUG-- [2014-04-27 08:43:12] [executor.cpp:245] signal: 0 time: 0 memory: 704
+
+--WARNING-- [2014-04-27 08:43:12] [executor.cpp:572] ptrace syscall fail
+--NOTICE-- [2014-04-27 08:43:12] [logger.cpp:43] log_close 1
+--NOTICE-- [2014-04-27 09:07:36] [logger.cpp:35] log_open 1
+--DEBUG-- [2014-04-27 09:07:36] [main.cpp:27] opened
+--DEBUG-- [2014-04-27 09:07:36] [compiler.cpp:321] m_config_path = /home/conlan/judge/compiler.xml
+
+--TRACE-- [2014-04-27 09:07:36] [compiler.cpp:350] Compile Command: g++ /home/conlan/judge/1001.cpp -lm -W -Wunused -Wfloat-equal -Wformat -Wparentheses -Wswitch -Wsequence-point -O2 -static -o 1001 2>compile_message.txt
+
+--TRACE-- [2014-04-27 09:07:36] [compiler.cpp:184] compile setTimer!
+
+--TRACE-- [2014-04-27 09:07:37] [compiler.cpp:231] Compile Succeed
+--DEBUG-- [2014-04-27 09:07:37] [compiler.cpp:128] result: option = 0 signal = 0
+
+--DEBUG-- [2014-04-27 09:07:37] [executor.cpp:439] cwd: /home/conlan/judge
+
+--DEBUG-- [2014-04-27 01:07:37] [executor.cpp:447] after chroot , cwd: /
+
+--TRACE-- [2014-04-27 01:07:37] [executor.cpp:454] set_security_option ok
+
+--DEBUG-- [2014-04-27 01:07:37] [executor.cpp:169] m_stack_limit = 8192
+
+--DEBUG-- [2014-04-27 01:07:37] [executor.cpp:176] set Stack limit : m_stack_limit = 8192
+--TRACE-- [2014-04-27 09:07:37] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 09:07:37] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 09:07:37] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 09:07:37] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 09:07:37] [executor.cpp:360] current memory used = 568
+
+--TRACE-- [2014-04-27 09:07:37] [executor.cpp:360] current memory used = 568
+
+--TRACE-- [2014-04-27 09:07:37] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 09:07:37] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 09:07:37] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 09:07:37] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 09:07:37] [executor.cpp:360] current memory used = 704
+
+--TRACE-- [2014-04-27 09:07:37] [executor.cpp:360] current memory used = 704
+
+--TRACE-- [2014-04-27 09:07:37] [executor.cpp:360] current memory used = 708
+
+--TRACE-- [2014-04-27 09:07:39] [executor.cpp:235] Execute Error
+
+--DEBUG-- [2014-04-27 09:07:39] [executor.cpp:245] signal: 9 time: 2000 memory: 708
+
+--TRACE-- [2014-04-27 09:07:39] [checker.cpp:105] Check result : AC
+
+--NOTICE-- [2014-04-27 09:07:39] [logger.cpp:43] log_close 1
+--NOTICE-- [2014-04-27 09:08:28] [logger.cpp:35] log_open 1
+--DEBUG-- [2014-04-27 09:08:28] [main.cpp:27] opened
+--DEBUG-- [2014-04-27 09:08:28] [compiler.cpp:321] m_config_path = /home/conlan/judge/compiler.xml
+
+--TRACE-- [2014-04-27 09:08:28] [compiler.cpp:350] Compile Command: g++ /home/conlan/judge/1001.cpp -lm -W -Wunused -Wfloat-equal -Wformat -Wparentheses -Wswitch -Wsequence-point -O2 -static -o 1001 2>compile_message.txt
+
+--TRACE-- [2014-04-27 09:08:28] [compiler.cpp:184] compile setTimer!
+
+--TRACE-- [2014-04-27 09:08:28] [compiler.cpp:231] Compile Succeed
+--DEBUG-- [2014-04-27 09:08:28] [compiler.cpp:128] result: option = 0 signal = 0
+
+--DEBUG-- [2014-04-27 09:08:28] [executor.cpp:439] cwd: /home/conlan/judge
+
+--DEBUG-- [2014-04-27 01:08:28] [executor.cpp:447] after chroot , cwd: /
+
+--TRACE-- [2014-04-27 01:08:28] [executor.cpp:454] set_security_option ok
+
+--DEBUG-- [2014-04-27 01:08:28] [executor.cpp:169] m_stack_limit = 8192
+
+--DEBUG-- [2014-04-27 01:08:28] [executor.cpp:176] set Stack limit : m_stack_limit = 8192
+--TRACE-- [2014-04-27 09:08:28] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 09:08:28] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 09:08:28] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 09:08:28] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 09:08:28] [executor.cpp:360] current memory used = 568
+
+--TRACE-- [2014-04-27 09:08:28] [executor.cpp:360] current memory used = 568
+
+--TRACE-- [2014-04-27 09:08:28] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 09:08:28] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 09:08:28] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 09:08:28] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 09:08:28] [executor.cpp:360] current memory used = 704
+
+--TRACE-- [2014-04-27 09:08:28] [executor.cpp:360] current memory used = 704
+
+--TRACE-- [2014-04-27 09:08:28] [executor.cpp:360] current memory used = 708
+
+--TRACE-- [2014-04-27 09:08:28] [executor.cpp:211] Exe succeed
+
+--DEBUG-- [2014-04-27 09:08:28] [executor.cpp:245] signal: 0 time: 0 memory: 708
+
+--TRACE-- [2014-04-27 09:08:28] [checker.cpp:105] Check result : AC
+
+--NOTICE-- [2014-04-27 09:08:28] [logger.cpp:43] log_close 1
+--NOTICE-- [2014-04-27 09:08:40] [logger.cpp:35] log_open 1
+--DEBUG-- [2014-04-27 09:08:40] [main.cpp:27] opened
+--DEBUG-- [2014-04-27 09:08:40] [compiler.cpp:321] m_config_path = /home/conlan/judge/compiler.xml
+
+--TRACE-- [2014-04-27 09:08:40] [compiler.cpp:350] Compile Command: g++ /home/conlan/judge/1001.cpp -lm -W -Wunused -Wfloat-equal -Wformat -Wparentheses -Wswitch -Wsequence-point -O2 -static -o 1001 2>compile_message.txt
+
+--TRACE-- [2014-04-27 09:08:40] [compiler.cpp:184] compile setTimer!
+
+--TRACE-- [2014-04-27 09:08:41] [compiler.cpp:231] Compile Succeed
+--DEBUG-- [2014-04-27 09:08:41] [compiler.cpp:128] result: option = 0 signal = 0
+
+--DEBUG-- [2014-04-27 09:08:41] [executor.cpp:439] cwd: /home/conlan/judge
+
+--DEBUG-- [2014-04-27 01:08:41] [executor.cpp:447] after chroot , cwd: /
+
+--TRACE-- [2014-04-27 01:08:41] [executor.cpp:454] set_security_option ok
+
+--DEBUG-- [2014-04-27 01:08:41] [executor.cpp:169] m_stack_limit = 8192
+
+--DEBUG-- [2014-04-27 01:08:41] [executor.cpp:176] set Stack limit : m_stack_limit = 8192
+--TRACE-- [2014-04-27 09:08:41] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 09:08:41] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 09:08:41] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 09:08:41] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 09:08:41] [executor.cpp:360] current memory used = 568
+
+--TRACE-- [2014-04-27 09:08:41] [executor.cpp:360] current memory used = 568
+
+--TRACE-- [2014-04-27 09:08:41] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 09:08:41] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 09:08:41] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 09:08:41] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 09:08:41] [executor.cpp:360] current memory used = 704
+
+--TRACE-- [2014-04-27 09:08:41] [executor.cpp:360] current memory used = 704
+
+--TRACE-- [2014-04-27 09:08:41] [executor.cpp:360] current memory used = 708
+
+--TRACE-- [2014-04-27 09:08:41] [executor.cpp:239] Stack Overflow
+
+--DEBUG-- [2014-04-27 09:08:41] [executor.cpp:245] signal: 11 time: 0 memory: 708
+
+--TRACE-- [2014-04-27 09:08:41] [checker.cpp:105] Check result : AC
+
+--NOTICE-- [2014-04-27 09:08:41] [logger.cpp:43] log_close 1
+--NOTICE-- [2014-04-27 09:09:02] [logger.cpp:35] log_open 1
+--DEBUG-- [2014-04-27 09:09:02] [main.cpp:27] opened
+--DEBUG-- [2014-04-27 09:09:02] [compiler.cpp:321] m_config_path = /home/conlan/judge/compiler.xml
+
+--TRACE-- [2014-04-27 09:09:02] [compiler.cpp:350] Compile Command: g++ /home/conlan/judge/1001.cpp -lm -W -Wunused -Wfloat-equal -Wformat -Wparentheses -Wswitch -Wsequence-point -O2 -static -o 1001 2>compile_message.txt
+
+--TRACE-- [2014-04-27 09:09:02] [compiler.cpp:184] compile setTimer!
+
+--TRACE-- [2014-04-27 09:09:03] [compiler.cpp:231] Compile Succeed
+--DEBUG-- [2014-04-27 09:09:03] [compiler.cpp:128] result: option = 0 signal = 0
+
+--DEBUG-- [2014-04-27 09:09:03] [executor.cpp:439] cwd: /home/conlan/judge
+
+--DEBUG-- [2014-04-27 01:09:03] [executor.cpp:447] after chroot , cwd: /
+
+--TRACE-- [2014-04-27 01:09:03] [executor.cpp:454] set_security_option ok
+
+--DEBUG-- [2014-04-27 01:09:03] [executor.cpp:169] m_stack_limit = 8192
+
+--DEBUG-- [2014-04-27 01:09:03] [executor.cpp:176] set Stack limit : m_stack_limit = 8192
+--TRACE-- [2014-04-27 09:09:03] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 09:09:03] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 09:09:03] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 09:09:03] [executor.cpp:360] current memory used = 564
+
+--TRACE-- [2014-04-27 09:09:03] [executor.cpp:360] current memory used = 568
+
+--TRACE-- [2014-04-27 09:09:03] [executor.cpp:360] current memory used = 568
+
+--TRACE-- [2014-04-27 09:09:03] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 09:09:03] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 09:09:03] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 09:09:03] [executor.cpp:360] current memory used = 700
+
+--TRACE-- [2014-04-27 09:09:03] [executor.cpp:360] current memory used = 704
+
+--TRACE-- [2014-04-27 09:09:03] [executor.cpp:360] current memory used = 704
+
+--TRACE-- [2014-04-27 09:09:03] [executor.cpp:360] current memory used = 708
+
+--TRACE-- [2014-04-27 09:09:03] [executor.cpp:239] Stack Overflow
+
+--DEBUG-- [2014-04-27 09:09:03] [executor.cpp:245] signal: 11 time: 0 memory: 708
+
+--TRACE-- [2014-04-27 09:09:03] [checker.cpp:105] Check result : AC
+
+--NOTICE-- [2014-04-27 09:09:03] [logger.cpp:43] log_close 1
+--NOTICE-- [2014-04-27 13:17:41] [logger.cpp:35] log_open 1
+--DEBUG-- [2014-04-27 13:17:41] [main.cpp:27] opened
+--DEBUG-- [2014-04-27 13:17:41] [compiler.cpp:321] m_config_path = /home/conlan/judge/compiler.xml
+
+--TRACE-- [2014-04-27 13:17:41] [compiler.cpp:350] Compile Command: g++ /home/conlan/judge/1001.cpp -lm -W -Wunused -Wfloat-equal -Wformat -Wparentheses -Wswitch -Wsequence-point -O2 -static -o 1001 2>compile_message.txt
+
+--TRACE-- [2014-04-27 13:17:41] [compiler.cpp:184] compile setTimer!
+
+--TRACE-- [2014-04-27 13:17:41] [compiler.cpp:231] Compile Succeed
+--DEBUG-- [2014-04-27 13:17:41] [compiler.cpp:128] result: option = 0 signal = 0
+
+--DEBUG-- [2014-04-27 13:17:41] [executor.cpp:435] cwd: /home/conlan/judge
+
+--DEBUG-- [2014-04-27 05:17:41] [executor.cpp:443] after chroot , cwd: /
+
+--TRACE-- [2014-04-27 05:17:41] [executor.cpp:450] set_security_option ok
+
+--DEBUG-- [2014-04-27 05:17:41] [executor.cpp:169] m_stack_limit = 8192
+
+--DEBUG-- [2014-04-27 05:17:41] [executor.cpp:176] set Stack limit : m_stack_limit = 8192
+--TRACE-- [2014-04-27 13:17:41] [executor.cpp:356] current memory used = 564
+
+--TRACE-- [2014-04-27 13:17:41] [executor.cpp:356] current memory used = 564
+
+--TRACE-- [2014-04-27 13:17:41] [executor.cpp:356] current memory used = 564
+
+--TRACE-- [2014-04-27 13:17:41] [executor.cpp:356] current memory used = 564
+
+--TRACE-- [2014-04-27 13:17:41] [executor.cpp:356] current memory used = 568
+
+--TRACE-- [2014-04-27 13:17:41] [executor.cpp:356] current memory used = 568
+
+--TRACE-- [2014-04-27 13:17:41] [executor.cpp:356] current memory used = 700
+
+--TRACE-- [2014-04-27 13:17:41] [executor.cpp:356] current memory used = 700
+
+--TRACE-- [2014-04-27 13:17:41] [executor.cpp:356] current memory used = 700
+
+--TRACE-- [2014-04-27 13:17:41] [executor.cpp:356] current memory used = 700
+
+--TRACE-- [2014-04-27 13:17:41] [executor.cpp:356] current memory used = 704
+
+--TRACE-- [2014-04-27 13:17:41] [executor.cpp:356] current memory used = 704
+
+--TRACE-- [2014-04-27 13:17:41] [executor.cpp:356] current memory used = 708
+
+--TRACE-- [2014-04-27 13:17:41] [executor.cpp:525] child signaled by 11 Segmentation fault
+--TRACE-- [2014-04-27 13:17:41] [executor.cpp:550] Run Time Error
+--TRACE-- [2014-04-27 13:17:41] [executor.cpp:215] Runtime Error
+
+--DEBUG-- [2014-04-27 13:17:41] [executor.cpp:241] signal: 11 time: 0 memory: 708
+
+--WARNING-- [2014-04-27 13:17:41] [executor.cpp:589] ptrace syscall fail
+--NOTICE-- [2014-04-27 13:17:41] [logger.cpp:43] log_close 1
